@@ -22,7 +22,7 @@ deploy:
   secret_access_key: $AWS_SECRET_KEY
   bucket: "bgpark-s3"
   skip_cleanup: true
-  local_dir: build
+  local_dir: build/libs
   region: ap-northeast-2
 
 notifications:
