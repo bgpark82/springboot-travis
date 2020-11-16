@@ -29,6 +29,7 @@ deploy:
     skip_cleanup: true
     local_dir: deploy
     region: ap-northeast-2
+    wait-until-deployed: true
 
   - provider: codedeploy
     access_key_id: $AWS_ACCESS_KEY
@@ -38,6 +39,7 @@ deploy:
     bundle_type: zip
     application: bgpark-codedeploy
     deployment_group: bgpark-codedeploy-group
+    wait-until-deployed: true
 
 notifications:
   slack: letshadow:xdR2SxYrzBCWVZODKrsTbwZB
