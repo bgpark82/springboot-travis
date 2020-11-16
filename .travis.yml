@@ -18,8 +18,8 @@ script:
 
 deploy:
   provider: s3
-  access_key_id: "AKIARH7J7IJUTJ4VKE7T"
-  secret_access_key: "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"
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
   bucket: "bgpark-s3"
   skip_cleanup: true
   region: ap-northeast-2
