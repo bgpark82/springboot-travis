@@ -16,5 +16,13 @@ before_install:
 script:
   - ./gradlew clean build
 
+deploy:
+  provider: s3
+  access_key_id: "AKIARH7J7IJUTJ4VKE7T"
+  secret_access_key: "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"
+  bucket: "bgpark-s3"
+  skip_cleanup: true
+  region: ap-northeast-2
+
 notifications:
   slack: letshadow:xdR2SxYrzBCWVZODKrsTbwZB
