@@ -5,5 +5,5 @@ branches:
   only:
     - master
 
-script:
+before_install:
   - chmod +x ./gradlew
