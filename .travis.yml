@@ -18,7 +18,7 @@ script:
 
 before_deploy:
   - mkdir -p deploy
-  - mv build/lis/*.jar deploy
+  - mv build/libs/*.jar deploy
 
 deploy:
   provider: s3
