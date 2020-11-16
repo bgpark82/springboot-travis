@@ -5,8 +5,16 @@ branches:
   only:
     - master
 
+cache:
+  directories:
+    - '$HOME/.m2/repository'
+    - '$HOME/.gradle'
+
 before_install:
   - chmod +x ./gradlew
+
+script:
+  - ./gradlew clean build
 
 notifications:
   slack: letshadow:xdR2SxYrzBCWVZODKrsTbwZB
